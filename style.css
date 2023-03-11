@@ -16,3 +16,64 @@
   --transparent-white-1: hsla(0, 0%, 100%, 0.75);
   --transparent-white-2: hsla(0, 0%, 100%, 0.6);
 }
+
+body {
+  background-color: var(--main-background);
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+}
+
+main {
+  background-color: var(--card-background);
+  width: min(90vw, 60em);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+header {
+  position: relative;
+}
+
+header img {
+  width: 100vw;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+  color: var(--white);
+}
+
+section span {
+  color: var(--accent);
+}
+
+section > p {
+  color: var(--transparent-white-1);
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+section ul {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+section ul > * + * {
+  margin-top: 1.25rem;
+}
+
+section ul p {
+  text-transform: uppercase;
+  margin-top: 0.75rem;
+  color: var(--transparent-white-2);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  color: var(--white);
+}
