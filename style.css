@@ -32,7 +32,7 @@ body {
 
 main {
   background-color: var(--card-background);
-  width: min(90vw, 60em);
+  width: 90vw;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -42,7 +42,7 @@ header {
 }
 
 header img {
-  width: 100vw;
+  width: 100%;
 }
 
 section {
@@ -89,4 +89,43 @@ section ul p {
   position: absolute;
   bottom: 2rem;
   color: var(--white);
+}
+
+@media (width > 30em) {
+  main {
+    width: 80em;
+    height: 30em;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  main > * {
+    width: 50%;
+    text-align: left;
+  }
+
+  section {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  ul li {
+    margin-top: 0;
+  }
+
+  header img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
