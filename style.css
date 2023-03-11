@@ -39,10 +39,13 @@ main {
 
 header {
   position: relative;
+  background-color: var(--accent);
 }
 
 header img {
   width: 100%;
+  height: 100%;
+  opacity: 0.6;
 }
 
 section {
@@ -106,6 +109,7 @@ section ul p {
 
   section {
     padding: 5rem;
+    padding-right: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
